@@ -1396,10 +1396,10 @@ class Shape(NodeMixin):
 
     def __init__(
         self,
+        material: str,
         obj: TopoDS_Shape = None,
         label: str = "",
         color: Color = None,
-        material: str = "",
         joints: dict[str, Joint] = None,
         parent: Compound = None,
         children: list[Shape] = None,
